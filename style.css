@@ -1,0 +1,294 @@
+*
+{
+    margin:0;
+    padding:0;
+    /* border:1px solid black; */
+    box-sizing:border-box;
+}
+body
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    background-color:#f4f4f4;
+    margin:0;
+    padding:0;
+   
+}
+.container
+{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+    display:flex;
+    justify-content:space-between;
+    /* means if something goes outside of container, just hide it dont show it and scrollbar */
+}
+header
+{
+    background-color:#35424a;
+    color:white;
+    padding-top:15px;
+    padding-bottom:20px;
+    min-height:70px;
+    border-bottom: 3px solid #e8491d;
+}
+header a
+{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+}
+header #branding
+{
+    width:70%;
+}
+header nav
+{
+    width:30%;
+    margin-top:10px;
+}
+header ul
+{
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+}
+header li
+{
+    padding:0 5px 0 5px;
+}
+header h1
+{
+    padding:0px;
+    margin:0px;
+}
+header .highlight, header .current a
+{
+    color:#e8491d;
+    font-weight:bold;
+}
+header a:hover
+{
+    color:#cccccc;
+    font-weight:bold;
+}
+
+/* Showcase  */
+
+
+#showcase
+{
+    min-height:400px;
+    background:url('360_F_579545387_6JuKZXKyBuvrGTVxcCIXPZnE5cr41vC9.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+    text-align:center;
+}
+#showcase .container
+{
+    display:grid;
+}
+#showcase h1
+{
+    font-size:55px;
+    margin-top:100px;
+    margin-bottom:10px;
+}
+#showcase p
+{
+    font-size:20px;
+    margin-bottom:30px;
+}
+#newsletter
+{
+    background:#35424a;
+    color:white;
+    min-height:70px;
+    padding:15px;
+}
+#newsletter form
+{
+    margin-top:6px;
+}
+#newsletter input[type="email"]
+{
+    padding:4px;
+    height:30px;
+    width:250px;
+}
+.button1
+{
+    border:none;
+  height:30px;    
+  background-color:#e8491d;
+  color:white;
+  font-weight:bold;
+  padding:0px 10px 0px 10px;
+  border-radius:5px;
+}
+
+
+/* boxes  */
+#boxes
+{
+    margin-top:25px;
+    margin-bottom:20px;
+}
+.box
+{
+    text-align:center;
+}
+.box
+{
+    min-height:250px;
+}
+.box img
+{
+    height:100px;
+    width:100px;
+    margin-bottom:10px;
+}
+.box h3
+{
+    margin-bottom:10px;
+}
+footer
+{
+    text-align:center;
+    color:white;
+    background:#e8491d;
+    height:50px;
+}
+footer p
+{
+    padding-top:15px;
+}
+article
+{
+    width:65%;
+    margin-top:15px;
+}
+aside
+{
+    width:25%;
+    max-height:260px;
+    padding-bottom:10px;
+}
+aside h3
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.dark
+{
+    background-color:#35424a;
+    color:white;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:0 5px 10px 5px;
+}
+ 
+
+#services li
+{
+    padding-left:20px;
+    border:#cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+}
+ aside input,textarea
+ {
+    width:90%;
+    padding:5px;
+ }
+
+#service-footer
+{
+    margin-top:43px;
+}
+
+ /* media Queries */
+  /* tablet screen sizes are 768 pixels  */
+ @media(max-width: 870px)
+ {
+    /* this css wil work from screen-size 0px to 768px */
+    header #tab, #newsletter #tab
+    {
+        display:grid;
+        justify-content:center;
+        align-items:center;
+        grid-template-columns: 1fr;
+    }
+    #branding ,#newsletter #tab h1
+    {
+        margin:auto;
+        text-align:center;
+        margin-bottom:10px;
+    }
+    header nav, #newsletter #tab form
+    {
+        margin:auto;
+        text-align:center;
+        display:flex;
+        width:70%;
+    }
+    header nav ul
+    {
+        margin:auto;
+    }
+    #showcase h1
+    {
+        margin-top:40px;
+    }
+    #main #normal, #main .container
+    {
+        display:grid;
+    }
+    #normal article, #normal aside, #main .container article, #main .container aside
+    {
+        width:100%;
+    }
+    #normal aside h3
+    {
+        text-align:center;
+    }
+    .Quote .button1
+    {
+        margin-bottom:0px;
+    }
+    #tab form .cover
+    {
+        margin:auto;
+    }
+ }
+ @media(max-width:650px)
+ {
+    #tab form .cover
+    {
+        margin:auto;
+    }
+    #tab form button
+    {
+        margin-top:5px;
+        width:80%;    
+    }
+ }
+ @media(max-width:490px)
+ {
+    header #branding , header nav
+    {
+        width:90%;
+    }
+    header nav
+    {
+        padding:0px;
+    }
+
+    #newsletter .container .cover input
+    {
+        max-width:215px;
+    }
+ }
